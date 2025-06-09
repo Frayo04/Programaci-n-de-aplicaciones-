@@ -1,0 +1,145 @@
+using System;
+
+namespace EjerciciosCondicionales
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hola, este es un programa con varios ejercicios");
+            NumeroPositivoNegativoOCero();
+        }
+
+        static void NumeroPositivoNegativoOCero()
+        {
+            Console.WriteLine("Ingrese un numero");
+            int num = int.Parse(Console.ReadLine());
+            if (num > 0)
+            {
+                Console.WriteLine("El numero es positivo");
+            }
+            else
+            {
+                if (num < 0)
+                {
+                    Console.WriteLine("El numero es negativo");
+                }
+                else
+                {
+                    Console.WriteLine("El numero es cero");
+                }
+            }
+        }
+
+        static void NumeroParOImpar()
+        {
+            Console.WriteLine("Ingrese un numero");
+            int num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("El numero es par");
+            }
+            else
+            {
+                Console.WriteLine("El numero es impar");
+            }
+        }
+
+        static void MayorDeEdad()
+        {
+            Console.WriteLine("Ingrese su edad");
+            int edad = int.Parse(Console.ReadLine());
+            if (edad >= 18)
+            {
+                Console.WriteLine("Es mayor de edad");
+            }
+            else
+            {
+                Console.WriteLine("Es menor de edad");
+            }
+        }
+
+        static void MultiploDeCinco()
+        {
+            Console.WriteLine("Ingrese un numero");
+            int num = int.Parse(Console.ReadLine());
+            if (num % 5 == 0)
+            {
+                Console.WriteLine("Es multiplo de 5");
+            }
+            else
+            {
+                Console.WriteLine("No es multiplo de 5");
+            }
+        }
+
+        static void DescuentoPorEdad()
+        {
+            Console.WriteLine("Ingrese su edad");
+            int edad = int.Parse(Console.ReadLine());
+            if (edad > 60)
+            {
+                Console.WriteLine("Tiene descuento del 50%");
+            }
+            else
+            {
+                Console.WriteLine("No tiene descuento");
+            }
+        }
+
+        static void CalificacionAprobatoria()
+        {
+            Console.WriteLine("Ingrese su calificacion");
+            int nota = int.Parse(Console.ReadLine());
+            if (nota >= 60)
+            {
+                Console.WriteLine("Aprobado");
+            }
+            else
+            {
+                Console.WriteLine("Reprobado");
+            }
+        }
+
+        static void DiaDeLaSemana()
+        {
+            Console.WriteLine("Ingrese un numero del 1 al 7");
+            int dia = int.Parse(Console.ReadLine());
+
+            if (dia == 1)
+            {
+                Console.WriteLine("Lunes");
+            }
+            else if (dia == 2)
+            {
+                Console.WriteLine("Martes");
+            }
+            else if (dia == 3)
+            {
+                Console.WriteLine("Miercoles");
+            }
+            else if (dia == 4)
+            {
+                Console.WriteLine("Jueves");
+            }
+            else if (dia == 5)
+            {
+                Console.WriteLine("Viernes");
+            }
+            else if (dia == 6)
+            {
+                Console.WriteLine("Sabado");
+            }
+            else if (dia == 7)
+            {
+                Console.WriteLine("Domingo");
+            }
+            else
+            {
+                Console.WriteLine("Dia invalido");
+            }
+        }
+
+        
+    }
+}
